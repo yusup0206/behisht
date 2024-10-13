@@ -28,9 +28,10 @@
                 BEHISHT LEZZETI
               </h2>
             </a>
-            <div class="hidden">
+            <div class="lg:hidden">
               <button
-                class="text-primary-100 bg-primary-200 p-4 rounded-custom"
+                id="openMenu"
+                class="text-primary-100 bg-primary-200 p-3 rounded-custom hover:bg-primary-300 transition-all"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -58,6 +59,87 @@
                   />
                 </svg>
               </button>
+              <div
+                id="menu"
+                class="fixed top-0 left-0 z-50 w-full h-screen bg-primary-100 px-5 py-7 flex flex-col items-center justify-start gap-6 overflow-y-auto"
+              >
+                <div class="flex items-center justify-start w-full mb-16">
+                  <button
+                    id="closeMenu"
+                    class="rounded-custom bg-primary-200 text-primary-100 p-4 hover:bg-primary-300 transition-all"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 21 22"
+                      fill="none"
+                      class="rotate-180 w-6 h-6"
+                    >
+                      <path
+                        d="M6 20L15 11L6 2"
+                        stroke="currentColor"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <a
+                  href="./index.html"
+                  class="flex flex-col items-center gap-[14px]"
+                >
+                  <div class="w-[71px] h-[71px] min-w-[71px] min-h-[71px]">
+                    <img
+                      src="/assets/images/logo.svg"
+                      alt=""
+                      class="w-full h-full"
+                    />
+                  </div>
+                  <h2 class="text-primary-300 text-2xl lg:text-3xl font-bold">
+                    BEHISHT LEZZETI
+                  </h2>
+                </a>
+
+                <!-- active link class="px-9 py-[18px] rounded-custom text-primary-100 text-base font-bold bg-white" -->
+                <!-- ordinary link class="px-9 py-[18px] rounded-custom text-primary-300 text-base font-bold hover:bg-white hover:text-primary-100 transition-all" -->
+
+                <a
+                  href="./products.html"
+                  class="w-full text-center px-9 py-[18px] rounded-custom text-primary-300 text-base font-bold hover:bg-white hover:text-primary-100 transition-all"
+                  >Продукция</a
+                >
+
+                <a
+                  href="./partners.html"
+                  class="w-full text-center px-9 py-[18px] rounded-custom text-primary-300 text-base font-bold hover:bg-white hover:text-primary-100 transition-all"
+                  >Партнерам</a
+                >
+                <a
+                  href="./about.html"
+                  class="w-full text-center px-9 py-[18px] rounded-custom text-primary-300 text-base font-bold hover:bg-white hover:text-primary-100 transition-all"
+                  >О нас</a
+                >
+                <div class="flex items-center justify-between gap-6">
+                  <!-- active lang -->
+                  <a
+                    href=""
+                    class="w-full px-9 py-[18px] text-primary-100 text-base font-bold bg-primary-300 rounded-custom"
+                    >Ру</a
+                  >
+                  <!-- ordinary lang -->
+                  <a
+                    href=""
+                    class="w-full px-9 py-[18px] text-primary-100 text-base font-bold bg-primary-200 hover:bg-primary-300 transition-all rounded-custom"
+                    >En</a
+                  >
+                  <!-- ordinary lang -->
+                  <a
+                    href=""
+                    class="w-full px-9 py-[18px] text-primary-100 text-base font-bold bg-primary-200 hover:bg-primary-300 transition-all rounded-custom"
+                    >Tm</a
+                  >
+                </div>
+              </div>
             </div>
             <div class="hidden lg:flex items-center gap-7">
               <!-- active link class="px-9 py-[18px] rounded-custom text-primary-100 text-base font-bold bg-white" -->
@@ -74,7 +156,7 @@
                 >Партнерам</a
               >
               <a
-                href=""
+                href="./about.html"
                 class="px-9 py-[18px] rounded-custom text-primary-300 text-base font-bold hover:bg-white hover:text-primary-100 transition-all"
                 >О нас</a
               >
@@ -124,18 +206,18 @@
       <section class="mb-[60px] lg:mb-[100px]">
         <div class="container">
           <div
-            class="relative w-full p-5 flex flex-col lg:flex-row gap-10 items-center justify-start"
+            class="relative w-full p-5 flex flex-col-reverse lg:flex-row gap-0 lg:gap-10 items-center justify-start"
           >
             <div
-              class="w-full max-w-[1168px] px-10 lg:px-[64px] py-[80px] lg:py-[104px] bg-primary-200 rounded-[60px] sm:rounded-[100px] flex flex-col items-start"
+              class="w-full lg:max-w-[963px] xl:max-w-[1168px] px-10 pt-[120px] lg:pt-[104px] lg:px-[64px] py-[80px] lg:py-[104px] bg-primary-200 rounded-[60px] sm:rounded-[100px] flex flex-col items-start"
             >
               <h1
-                class="w-full text-primary-100 text-[36px] md:text-[56px] lg:text-[70px] font-black max-w-full lg:max-w-[502px] leading-tight mb-4 uppercase"
+                class="w-full text-primary-100 text-[36px] md:text-[50px] xl:text-[70px] font-black max-w-full lg:max-w-[400px] xl:max-w-[502px] leading-tight mb-[35px] lg:mb-4 uppercase"
               >
                 Sezam - Больше чем печенье
               </h1>
               <p
-                class="w-full text-primary-100 text-sm font-medium uppercase max-w-full lg:max-w-[502px] mb-[50px]"
+                class="w-full text-primary-100 text-sm font-medium uppercase max-w-full lg:max-w-[400px] xl:max-w-[502px] mb-[35px] lg:mb-[50px]"
               >
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -150,7 +232,7 @@
               </p>
               <a
                 href=""
-                class="w-full max-w-full lg:max-w-[369px] p-7 lg:p-9 rounded-custom bg-primary-100 text-primary-300 text-lg lg:text-xl font-bold flex items-center justify-center gap-[14px] text-center hover:text-primary-100 hover:bg-primary-300 transition-all"
+                class="w-full mx-auto lg:mx-0 max-w-[369px] p-7 lg:p-9 rounded-custom bg-primary-100 text-primary-300 text-lg lg:text-xl font-bold flex items-center justify-center gap-[14px] text-center hover:text-primary-100 hover:bg-primary-300 transition-all"
                 >Подробнее
 
                 <svg
@@ -171,9 +253,9 @@
               </a>
             </div>
             <div
-              class="static lg:absolute right-5 rounded-[60px] sm:rounded-[100px] overflow-hidden w-full h-full max-w-[824px] max-h-[667px]"
+              class="p-6 md:p-10 pb-0 lg:p-0 static translate-y-24 lg:translate-y-0 lg:absolute lg:top-auto right-auto lg:right-5 rounded-[60px] sm:rounded-[100px] overflow-hidden w-full h-full max-w-full max-h-full lg:max-w-[553px] xl:max-w-[824px] lg:max-h-[495px] xl:max-h-[667px]"
             >
-              <img src="/assets/images/hero.png" alt="" class="w-full h-full" />
+              <img src="/assets/images/hero.png" alt="" class="w-full" />
             </div>
           </div>
         </div>
@@ -183,7 +265,7 @@
           <div class="w-full p-5 flex flex-col gap-[60px] lg:gap-[100px]">
             <div class="text-center py-6 lg:py-10">
               <h1
-                class="text-primary-300 text-[36px] md:text-[56px] lg:text-[70px] font-black uppercase"
+                class="text-primary-300 text-[36px] md:text-[50px] xl:text-[70px] font-black uppercase"
               >
                 ПРОДУКЦИЯ
               </h1>
@@ -353,7 +435,7 @@
           <div class="w-full p-5 flex flex-col gap-[60px] lg:gap-[100px]">
             <div class="text-center py-6 lg:py-10">
               <h1
-                class="text-primary-300 text-[36px] md:text-[56px] lg:text-[70px] font-black uppercase"
+                class="text-primary-300 text-[36px] md:text-[50px] xl:text-[70px] font-black uppercase"
               >
                 Преимущества
               </h1>

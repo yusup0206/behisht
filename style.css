@@ -35,3 +35,13 @@ html {
 .customShadow {
   box-shadow: 0px 0px 30px 0px #00000040;
 }
+
+#menu {
+  transform: translateX(100%);
+  transition: 0.3s all ease;
+}
+
+#menu.active {
+  transform: translateX(0%);
+  transition: 0.3s all ease;
+}

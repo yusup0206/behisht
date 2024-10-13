@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/swiper/swiper.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>BEHIST LEZZETI</title>
+  </head>
+
+  <body class="bg-primary-100">
+    <header>
+      <nav class="fixed top-0 left-0 z-40 w-full bg-[#204341BF]">
+        <div class="container">
+          <div class="w-full px-5 py-5 flex items-center justify-between gap-6">
+            <a href="./index.html" class="flex items-center gap-[14px]">
+              <div class="w-[71px] h-[71px] min-w-[71px] min-h-[71px]">
+                <img
+                  src="/assets/images/logo.svg"
+                  alt=""
+                  class="w-full h-full"
+                />
+              </div>
+              <h2
+                class="hidden sm:block text-primary-300 text-2xl lg:text-3xl font-bold"
+              >
+                BEHISHT LEZZETI
+              </h2>
+            </a>
+            <div class="lg:hidden">
+              <button
+                id="openMenu"
+                class="text-primary-100 bg-primary-200 p-3 rounded-custom hover:bg-primary-300 transition-all"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-8 h-8"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M5 12H20"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M5 17H20"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M5 7H20"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+              <div
+                id="menu"
+                class="fixed top-0 left-0 z-50 w-full h-screen bg-primary-100 px-5 py-7 flex flex-col items-center justify-start gap-6 overflow-y-auto"
+              >
+                <div class="flex items-center justify-start w-full mb-16">
+                  <button
+                    id="closeMenu"
+                    class="rounded-custom bg-primary-200 text-primary-100 p-4 hover:bg-primary-300 transition-all"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 21 22"
+                      fill="none"
+                      class="rotate-180 w-6 h-6"
+                    >
+                      <path
+                        d="M6 20L15 11L6 2"
+                        stroke="currentColor"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <a
+                  href="./index.html"
+                  class="flex flex-col items-center gap-[14px]"
+                >
+                  <div class="w-[71px] h-[71px] min-w-[71px] min-h-[71px]">
+                    <img
+                      src="/assets/images/logo.svg"
+                      alt=""
+                      class="w-full h-full"
+                    />
+                  </div>
+                  <h2 class="text-primary-300 text-2xl lg:text-3xl font-bold">
+                    BEHISHT LEZZETI
+                  </h2>
+                </a>
+
+                <!-- active link class="px-9 py-[18px] rounded-custom text-primary-100 text-base font-bold bg-white" -->
+                <!-- ordinary link class="px-9 py-[18px] rounded-custom text-primary-300 text-base font-bold hover:bg-white hover:text-primary-100 transition-all" -->
+
+                <a
+                  href="./products.html"
+                  class="w-full text-center px-9 py-[18px] rounded-custom text-primary-300 text-base font-bold hover:bg-white hover:text-primary-100 transition-all"
+                  >Продукция</a
+                >
+
+                <a
+                  href="./partners.html"
+                  class="w-full text-center px-9 py-[18px] rounded-custom text-primary-300 text-base font-bold hover:bg-white hover:text-primary-100 transition-all"
+                  >Партнерам</a
+                >
+                <a
+                  href="./about.html"
+                  class="w-full text-center px-9 py-[18px] rounded-custom text-primary-300 text-base font-bold hover:bg-white hover:text-primary-100 transition-all"
+                  >О нас</a
+                >
+                <div class="flex items-center justify-between gap-6">
+                  <!-- active lang -->
+                  <a
+                    href=""
+                    class="w-full px-9 py-[18px] text-primary-100 text-base font-bold bg-primary-300 rounded-custom"
+                    >Ру</a
+                  >
+                  <!-- ordinary lang -->
+                  <a
+                    href=""
+                    class="w-full px-9 py-[18px] text-primary-100 text-base font-bold bg-primary-200 hover:bg-primary-300 transition-all rounded-custom"
+                    >En</a
+                  >
+                  <!-- ordinary lang -->
+                  <a
+                    href=""
+                    class="w-full px-9 py-[18px] text-primary-100 text-base font-bold bg-primary-200 hover:bg-primary-300 transition-all rounded-custom"
+                    >Tm</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="hidden lg:flex items-center gap-7">
+              <!-- active link class="px-9 py-[18px] rounded-custom text-primary-100 text-base font-bold bg-white" -->
+              <!-- ordinary link class="px-9 py-[18px] rounded-custom text-primary-300 text-base font-bold hover:bg-white hover:text-primary-100 transition-all" -->
+
+              <a
+                href="./products.html"
+                class="px-9 py-[18px] rounded-custom text-primary-300 text-base font-bold hover:bg-white hover:text-primary-100 transition-all"
+                >Продукция</a
+              >
+              <a
+                href="./partners.html"
+                class="px-9 py-[18px] rounded-custom text-primary-300 text-base font-bold hover:bg-white hover:text-primary-100 transition-all"
+                >Партнерам</a
+              >
+              <a
+                href="./about.html"
+                class="px-9 py-[18px] rounded-custom text-primary-300 text-base font-bold hover:bg-white hover:text-primary-100 transition-all"
+                >О нас</a
+              >
+              <div class="group relative langDropdown">
+                <span
+                  class="cursor-pointer px-9 py-[18px] rounded-t-custom rounded-b-custom flex items-center gap-[14px] text-primary-100 text-base font-bold bg-primary-200 group-hover:rounded-b-none"
+                >
+                  Русский
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="21"
+                    viewBox="0 0 22 21"
+                    fill="none"
+                    class="group-hover:rotate-180 transition-all"
+                  >
+                    <path
+                      d="M2 6L11 15L20 6"
+                      stroke="#204341"
+                      stroke-width="4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <div
+                  class="absolute top-18 -translate-y-6 group-hover:translate-y-0 left-0 bg-primary-200 flex flex-col w-full rounded-b-custom overflow-hidden opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all"
+                >
+                  <a
+                    href=""
+                    class="w-full px-9 py-[18px] text-primary-100 text-base font-bold bg-primary-200 hover:bg-primary-100 hover:text-primary-200 transition-all"
+                    >English</a
+                  >
+                  <a
+                    href=""
+                    class="w-full px-9 py-[18px] text-primary-100 text-base font-bold bg-primary-200 hover:bg-primary-100 hover:text-primary-200 transition-all"
+                    >Türkmen</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-[111px]">
+      <section class="bg-primary-100">
+        <div class="container">
+          <div
+            class="w-full px-5 flex flex-col gap-[35px] text-center py-[100px] lg:py-[166px]"
+          >
+            <h1
+              class="text-primary-300 text-[36px] md:text-[50px] xl:text-[70px] font-black uppercase"
+            >
+              О компании
+            </h1>
+            <p
+              class="text-primary-300 text-sm font-medium uppercase max-w-[950px] mx-auto"
+            >
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="mb-[60px] lg:mb-[100px]">
+        <div class="container">
+          <div class="w-full p-5 flex flex-col gap-[60px] lg:gap-[100px]">
+            <div class="text-center">
+              <h1
+                class="text-primary-300 text-[36px] md:text-[50px] xl:text-[70px] font-black uppercase"
+              >
+                Преимущества работы с нами
+              </h1>
+            </div>
+            <div
+              class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 lg:gap-12"
+            >
+              <div
+                class="rounded-custom bg-primary-300 px-[30px] py-[60px] flex flex-col gap-[30px]"
+              >
+                <div
+                  class="w-full max-w-[100px] max-h-[100px] rounded-custom overflow-hidden mx-auto mb-[20px] lg:mb-[30px]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-full h-full"
+                    viewBox="0 0 200 200"
+                    fill="none"
+                  >
+                    <path
+                      d="M84.4444 146.667L162.778 68.3333L147.222 52.7778L84.4444 115.556L52.7778 83.8889L37.2222 99.4444L84.4444 146.667ZM22.2222 200C16.1111 200 10.8796 197.824 6.52778 193.472C2.17593 189.12 0 183.889 0 177.778V22.2222C0 16.1111 2.17593 10.8796 6.52778 6.52778C10.8796 2.17593 16.1111 0 22.2222 0H177.778C183.889 0 189.12 2.17593 193.472 6.52778C197.824 10.8796 200 16.1111 200 22.2222V177.778C200 183.889 197.824 189.12 193.472 193.472C189.12 197.824 183.889 200 177.778 200H22.2222Z"
+                      fill="#204341"
+                    />
+                  </svg>
+                </div>
+                <h3
+                  class="text-primary-100 text-lg lg:text-xl font-bold line-clamp-1 text-center"
+                >
+                  Преимущество №1
+                </h3>
+                <p
+                  class="text-primary-100 text-sm font-medium line-clamp-4 uppercase"
+                >
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                </p>
+              </div>
+              <div
+                class="rounded-custom bg-primary-300 px-[30px] py-[60px] flex flex-col gap-[30px]"
+              >
+                <div
+                  class="w-full max-w-[100px] max-h-[100px] rounded-custom overflow-hidden mx-auto mb-[20px] lg:mb-[30px]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-full h-full"
+                    viewBox="0 0 200 200"
+                    fill="none"
+                  >
+                    <path
+                      d="M84.4444 146.667L162.778 68.3333L147.222 52.7778L84.4444 115.556L52.7778 83.8889L37.2222 99.4444L84.4444 146.667ZM22.2222 200C16.1111 200 10.8796 197.824 6.52778 193.472C2.17593 189.12 0 183.889 0 177.778V22.2222C0 16.1111 2.17593 10.8796 6.52778 6.52778C10.8796 2.17593 16.1111 0 22.2222 0H177.778C183.889 0 189.12 2.17593 193.472 6.52778C197.824 10.8796 200 16.1111 200 22.2222V177.778C200 183.889 197.824 189.12 193.472 193.472C189.12 197.824 183.889 200 177.778 200H22.2222Z"
+                      fill="#204341"
+                    />
+                  </svg>
+                </div>
+                <h3
+                  class="text-primary-100 text-lg lg:text-xl font-bold line-clamp-1 text-center"
+                >
+                  Преимущество №1
+                </h3>
+                <p
+                  class="text-primary-100 text-sm font-medium line-clamp-4 uppercase"
+                >
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                </p>
+              </div>
+              <div
+                class="rounded-custom bg-primary-300 px-[30px] py-[60px] flex flex-col gap-[30px]"
+              >
+                <div
+                  class="w-full max-w-[100px] max-h-[100px] rounded-custom overflow-hidden mx-auto mb-[20px] lg:mb-[30px]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-full h-full"
+                    viewBox="0 0 200 200"
+                    fill="none"
+                  >
+                    <path
+                      d="M84.4444 146.667L162.778 68.3333L147.222 52.7778L84.4444 115.556L52.7778 83.8889L37.2222 99.4444L84.4444 146.667ZM22.2222 200C16.1111 200 10.8796 197.824 6.52778 193.472C2.17593 189.12 0 183.889 0 177.778V22.2222C0 16.1111 2.17593 10.8796 6.52778 6.52778C10.8796 2.17593 16.1111 0 22.2222 0H177.778C183.889 0 189.12 2.17593 193.472 6.52778C197.824 10.8796 200 16.1111 200 22.2222V177.778C200 183.889 197.824 189.12 193.472 193.472C189.12 197.824 183.889 200 177.778 200H22.2222Z"
+                      fill="#204341"
+                    />
+                  </svg>
+                </div>
+                <h3
+                  class="text-primary-100 text-lg lg:text-xl font-bold line-clamp-1 text-center"
+                >
+                  Преимущество №1
+                </h3>
+                <p
+                  class="text-primary-100 text-sm font-medium line-clamp-4 uppercase"
+                >
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                </p>
+              </div>
+              <div
+                class="rounded-custom bg-primary-300 px-[30px] py-[60px] flex flex-col gap-[30px]"
+              >
+                <div
+                  class="w-full max-w-[100px] max-h-[100px] rounded-custom overflow-hidden mx-auto mb-[20px] lg:mb-[30px]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-full h-full"
+                    viewBox="0 0 200 200"
+                    fill="none"
+                  >
+                    <path
+                      d="M84.4444 146.667L162.778 68.3333L147.222 52.7778L84.4444 115.556L52.7778 83.8889L37.2222 99.4444L84.4444 146.667ZM22.2222 200C16.1111 200 10.8796 197.824 6.52778 193.472C2.17593 189.12 0 183.889 0 177.778V22.2222C0 16.1111 2.17593 10.8796 6.52778 6.52778C10.8796 2.17593 16.1111 0 22.2222 0H177.778C183.889 0 189.12 2.17593 193.472 6.52778C197.824 10.8796 200 16.1111 200 22.2222V177.778C200 183.889 197.824 189.12 193.472 193.472C189.12 197.824 183.889 200 177.778 200H22.2222Z"
+                      fill="#204341"
+                    />
+                  </svg>
+                </div>
+                <h3
+                  class="text-primary-100 text-lg lg:text-xl font-bold line-clamp-1 text-center"
+                >
+                  Преимущество №1
+                </h3>
+                <p
+                  class="text-primary-100 text-sm font-medium line-clamp-4 uppercase"
+                >
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                </p>
+              </div>
+            </div>
+            <a
+              href=""
+              class="w-full max-w-[369px] mx-auto p-7 lg:p-9 rounded-custom bg-primary-200 text-primary-100 text-lg lg:text-xl font-bold flex items-center justify-center gap-[14px] text-center hover:text-primary-100 hover:bg-primary-300 transition-all"
+              >Подробнее
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="22"
+                viewBox="0 0 21 22"
+                fill="none"
+              >
+                <path
+                  d="M6 20L15 11L6 2"
+                  stroke="currentColor"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="mb-[60px] lg:mb-[100px]">
+        <div class="container">
+          <div class="w-full p-5 flex flex-col gap-[60px] lg:gap-[100px]">
+            <div class="text-center">
+              <h1
+                class="text-primary-300 text-[36px] md:text-[50px] xl:text-[70px] font-black uppercase"
+              >
+                Сертификаты качества
+              </h1>
+            </div>
+            <div
+              class="w-full flex items-start justify-center gap-12 flex-wrap"
+            >
+              <div class="flex flex-col gap-5">
+                <div
+                  class="w-full h-full max-w-[300px] max-h-[430px] bg-primary-300"
+                >
+                  <img
+                    src="/assets/images/feedback.jpg"
+                    alt=""
+                    class="w-full h-full"
+                  />
+                </div>
+                <h5
+                  class="text-primary-200 text-lg lg:text-xl font-bold max-w-[300px] text-center"
+                >
+                  Сертификат о качестве №1 тут егона называние или описание
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </h5>
+              </div>
+              <div class="flex flex-col gap-5">
+                <div
+                  class="w-full h-full max-w-[300px] max-h-[430px] bg-primary-300"
+                >
+                  <img
+                    src="/assets/images/feedback.jpg"
+                    alt=""
+                    class="w-full h-full"
+                  />
+                </div>
+                <h5
+                  class="text-primary-200 text-lg lg:text-xl font-bold max-w-[300px] text-center"
+                >
+                  Сертификат о качестве №1 тут егона называние или описание
+                </h5>
+              </div>
+              <div class="flex flex-col gap-5">
+                <div
+                  class="w-full h-full max-w-[300px] max-h-[430px] bg-primary-300"
+                >
+                  <img
+                    src="/assets/images/feedback.jpg"
+                    alt=""
+                    class="w-full h-full"
+                  />
+                </div>
+                <h5
+                  class="text-primary-200 text-lg lg:text-xl font-bold max-w-[300px] text-center"
+                >
+                  Сертификат о качестве №1 тут егона называние или описание
+                </h5>
+              </div>
+              <div class="flex flex-col gap-5">
+                <div
+                  class="w-full h-full max-w-[300px] max-h-[430px] bg-primary-300"
+                >
+                  <img
+                    src="/assets/images/feedback.jpg"
+                    alt=""
+                    class="w-full h-full"
+                  />
+                </div>
+                <h5
+                  class="text-primary-200 text-lg lg:text-xl font-bold max-w-[300px] text-center"
+                >
+                  Сертификат о качестве №1 тут егона называние или описание
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mb-[60px] lg:mb-[100px]">
+        <div class="container">
+          <div class="w-full p-5 flex flex-col gap-10 lg:gap-[50px]">
+            <div class="text-center">
+              <h1
+                class="text-primary-300 text-[36px] md:text-[50px] xl:text-[70px] font-black uppercase"
+              >
+                Контакты
+              </h1>
+            </div>
+            <div
+              class="w-full flex items-center justify-center gap-6 flex-wrap"
+            >
+              <div class="flex flex-col gap-2">
+                <p class="text-primary-200 text-lg lg:text-xl font-bold">
+                  Номер телефона
+                </p>
+                <div class="flex items-center gap-2">
+                  <input
+                    type="text"
+                    value="+99365656565"
+                    class="myInput w-full max-w-[240px] bg-primary-300 rounded-[8px] p-4 text-center text-lg lg:text-xl text-primary-100 font-medium"
+                    disabled
+                  />
+                  <button
+                    onclick="copyToClipBoard(this.previousElementSibling)"
+                    class="p-4 bg-primary-300 rounded-[8px]"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 29 30"
+                      fill="none"
+                    >
+                      <path
+                        d="M5.75 18.6787H4.5C3.83696 18.6787 3.20107 18.4153 2.73223 17.9465C2.26339 17.4776 2 16.8418 2 16.1787V4.92871C2 4.26567 2.26339 3.62978 2.73223 3.16094C3.20107 2.6921 3.83696 2.42871 4.5 2.42871H15.75C16.413 2.42871 17.0489 2.6921 17.5178 3.16094C17.9866 3.62978 18.25 4.26567 18.25 4.92871V6.17871M13.25 11.1787H24.5C25.8807 11.1787 27 12.298 27 13.6787V24.9287C27 26.3094 25.8807 27.4287 24.5 27.4287H13.25C11.8693 27.4287 10.75 26.3094 10.75 24.9287V13.6787C10.75 12.298 11.8693 11.1787 13.25 11.1787Z"
+                        stroke="#204341"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-col gap-2">
+                <p class="text-primary-200 text-lg lg:text-xl font-bold">
+                  Instagram
+                </p>
+                <div class="flex items-center gap-2">
+                  <input
+                    type="text"
+                    value="@behisht"
+                    class="myInput w-full max-w-[240px] bg-primary-300 rounded-[8px] p-4 text-center text-lg lg:text-xl text-primary-100 font-medium"
+                    disabled
+                  />
+                  <button
+                    onclick="copyToClipBoard(this.previousElementSibling)"
+                    class="p-4 bg-primary-300 rounded-[8px]"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 29 30"
+                      fill="none"
+                    >
+                      <path
+                        d="M5.75 18.6787H4.5C3.83696 18.6787 3.20107 18.4153 2.73223 17.9465C2.26339 17.4776 2 16.8418 2 16.1787V4.92871C2 4.26567 2.26339 3.62978 2.73223 3.16094C3.20107 2.6921 3.83696 2.42871 4.5 2.42871H15.75C16.413 2.42871 17.0489 2.6921 17.5178 3.16094C17.9866 3.62978 18.25 4.26567 18.25 4.92871V6.17871M13.25 11.1787H24.5C25.8807 11.1787 27 12.298 27 13.6787V24.9287C27 26.3094 25.8807 27.4287 24.5 27.4287H13.25C11.8693 27.4287 10.75 26.3094 10.75 24.9287V13.6787C10.75 12.298 11.8693 11.1787 13.25 11.1787Z"
+                        stroke="#204341"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-col gap-2">
+                <p class="text-primary-200 text-lg lg:text-xl font-bold">
+                  E-mail
+                </p>
+                <div class="flex items-center gap-2">
+                  <input
+                    type="text"
+                    value="info@example.com"
+                    class="myInput w-full max-w-[240px] bg-primary-300 rounded-[8px] p-4 text-center text-lg lg:text-xl text-primary-100 font-medium"
+                    disabled
+                  />
+                  <button
+                    onclick="copyToClipBoard(this.previousElementSibling)"
+                    class="p-4 bg-primary-300 rounded-[8px]"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 29 30"
+                      fill="none"
+                    >
+                      <path
+                        d="M5.75 18.6787H4.5C3.83696 18.6787 3.20107 18.4153 2.73223 17.9465C2.26339 17.4776 2 16.8418 2 16.1787V4.92871C2 4.26567 2.26339 3.62978 2.73223 3.16094C3.20107 2.6921 3.83696 2.42871 4.5 2.42871H15.75C16.413 2.42871 17.0489 2.6921 17.5178 3.16094C17.9866 3.62978 18.25 4.26567 18.25 4.92871V6.17871M13.25 11.1787H24.5C25.8807 11.1787 27 12.298 27 13.6787V24.9287C27 26.3094 25.8807 27.4287 24.5 27.4287H13.25C11.8693 27.4287 10.75 26.3094 10.75 24.9287V13.6787C10.75 12.298 11.8693 11.1787 13.25 11.1787Z"
+                        stroke="#204341"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-col gap-2">
+                <p class="text-primary-200 text-lg lg:text-xl font-bold">
+                  Номер телефона
+                </p>
+                <div class="flex items-center gap-2">
+                  <input
+                    type="text"
+                    value="+99365656565"
+                    class="myInput w-full max-w-[240px] bg-primary-300 rounded-[8px] p-4 text-center text-lg lg:text-xl text-primary-100 font-medium"
+                    disabled
+                  />
+                  <button
+                    onclick="copyToClipBoard(this.previousElementSibling)"
+                    class="p-4 bg-primary-300 rounded-[8px]"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 29 30"
+                      fill="none"
+                    >
+                      <path
+                        d="M5.75 18.6787H4.5C3.83696 18.6787 3.20107 18.4153 2.73223 17.9465C2.26339 17.4776 2 16.8418 2 16.1787V4.92871C2 4.26567 2.26339 3.62978 2.73223 3.16094C3.20107 2.6921 3.83696 2.42871 4.5 2.42871H15.75C16.413 2.42871 17.0489 2.6921 17.5178 3.16094C17.9866 3.62978 18.25 4.26567 18.25 4.92871V6.17871M13.25 11.1787H24.5C25.8807 11.1787 27 12.298 27 13.6787V24.9287C27 26.3094 25.8807 27.4287 24.5 27.4287H13.25C11.8693 27.4287 10.75 26.3094 10.75 24.9287V13.6787C10.75 12.298 11.8693 11.1787 13.25 11.1787Z"
+                        stroke="#204341"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-col gap-2">
+                <p class="text-primary-200 text-lg lg:text-xl font-bold">
+                  Номер телефона
+                </p>
+                <div class="flex items-center gap-2">
+                  <input
+                    type="text"
+                    value="+99365656565"
+                    class="myInput w-full max-w-[240px] bg-primary-300 rounded-[8px] p-4 text-center text-lg lg:text-xl text-primary-100 font-medium"
+                    disabled
+                  />
+                  <button
+                    onclick="copyToClipBoard(this.previousElementSibling)"
+                    class="p-4 bg-primary-300 rounded-[8px]"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 29 30"
+                      fill="none"
+                    >
+                      <path
+                        d="M5.75 18.6787H4.5C3.83696 18.6787 3.20107 18.4153 2.73223 17.9465C2.26339 17.4776 2 16.8418 2 16.1787V4.92871C2 4.26567 2.26339 3.62978 2.73223 3.16094C3.20107 2.6921 3.83696 2.42871 4.5 2.42871H15.75C16.413 2.42871 17.0489 2.6921 17.5178 3.16094C17.9866 3.62978 18.25 4.26567 18.25 4.92871V6.17871M13.25 11.1787H24.5C25.8807 11.1787 27 12.298 27 13.6787V24.9287C27 26.3094 25.8807 27.4287 24.5 27.4287H13.25C11.8693 27.4287 10.75 26.3094 10.75 24.9287V13.6787C10.75 12.298 11.8693 11.1787 13.25 11.1787Z"
+                        stroke="#204341"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-col gap-2">
+                <p class="text-primary-200 text-lg lg:text-xl font-bold">
+                  Instagram
+                </p>
+                <div class="flex items-center gap-2">
+                  <input
+                    type="text"
+                    value="@behisht"
+                    class="myInput w-full max-w-[240px] bg-primary-300 rounded-[8px] p-4 text-center text-lg lg:text-xl text-primary-100 font-medium"
+                    disabled
+                  />
+                  <button
+                    onclick="copyToClipBoard(this.previousElementSibling)"
+                    class="p-4 bg-primary-300 rounded-[8px]"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 29 30"
+                      fill="none"
+                    >
+                      <path
+                        d="M5.75 18.6787H4.5C3.83696 18.6787 3.20107 18.4153 2.73223 17.9465C2.26339 17.4776 2 16.8418 2 16.1787V4.92871C2 4.26567 2.26339 3.62978 2.73223 3.16094C3.20107 2.6921 3.83696 2.42871 4.5 2.42871H15.75C16.413 2.42871 17.0489 2.6921 17.5178 3.16094C17.9866 3.62978 18.25 4.26567 18.25 4.92871V6.17871M13.25 11.1787H24.5C25.8807 11.1787 27 12.298 27 13.6787V24.9287C27 26.3094 25.8807 27.4287 24.5 27.4287H13.25C11.8693 27.4287 10.75 26.3094 10.75 24.9287V13.6787C10.75 12.298 11.8693 11.1787 13.25 11.1787Z"
+                        stroke="#204341"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-col gap-2">
+                <p class="text-primary-200 text-lg lg:text-xl font-bold">
+                  E-mail
+                </p>
+                <div class="flex items-center gap-2">
+                  <input
+                    type="text"
+                    value="info@example.com"
+                    class="myInput w-full max-w-[240px] bg-primary-300 rounded-[8px] p-4 text-center text-lg lg:text-xl text-primary-100 font-medium"
+                    disabled
+                  />
+                  <button
+                    onclick="copyToClipBoard(this.previousElementSibling)"
+                    class="p-4 bg-primary-300 rounded-[8px]"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 29 30"
+                      fill="none"
+                    >
+                      <path
+                        d="M5.75 18.6787H4.5C3.83696 18.6787 3.20107 18.4153 2.73223 17.9465C2.26339 17.4776 2 16.8418 2 16.1787V4.92871C2 4.26567 2.26339 3.62978 2.73223 3.16094C3.20107 2.6921 3.83696 2.42871 4.5 2.42871H15.75C16.413 2.42871 17.0489 2.6921 17.5178 3.16094C17.9866 3.62978 18.25 4.26567 18.25 4.92871V6.17871M13.25 11.1787H24.5C25.8807 11.1787 27 12.298 27 13.6787V24.9287C27 26.3094 25.8807 27.4287 24.5 27.4287H13.25C11.8693 27.4287 10.75 26.3094 10.75 24.9287V13.6787C10.75 12.298 11.8693 11.1787 13.25 11.1787Z"
+                        stroke="#204341"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mb-[60px] lg:mb-[100px]">
+        <div class="container">
+          <div class="w-full p-5 flex flex-col gap-[60px] lg:gap-[100px]">
+            <h1
+              class="text-primary-300 text-[36px] md:text-[50px] xl:text-[70px] font-black uppercase text-center"
+            >
+              Форма для связи
+            </h1>
+
+            <form
+              action=""
+              class="w-full max-w-[1172px] mx-auto bg-primary-200 rounded-custom px-[40px] md:px-[120px] py-[60px]"
+            >
+              <div
+                class="flex flex-col md:flex-row gap-[80px] md:gap-[120px] mb-[60px]"
+              >
+                <div class="w-full flex flex-col gap-[30px] md:gap-[60px]">
+                  <div class="flex flex-col w-full">
+                    <label
+                      for=""
+                      class="text-primary-100 text-xl md:text-2xl font-bold"
+                      >Имя</label
+                    >
+                    <input
+                      type="text"
+                      class="w-full py-5 border-b-[3px] border-primary-100 text-sm font-medium bg-transparent outline-none"
+                      placeholder="Введите свое имя"
+                    />
+                  </div>
+                  <div class="flex flex-col w-full">
+                    <label
+                      for=""
+                      class="text-primary-100 text-xl md:text-2xl font-bold"
+                      >Имя</label
+                    >
+                    <input
+                      type="text"
+                      class="w-full py-5 border-b-[3px] border-primary-100 text-sm font-medium bg-transparent outline-none"
+                      placeholder="Введите свое имя"
+                    />
+                  </div>
+                </div>
+                <span
+                  class="w-full min-w-[3px] md:w-[3px] h-[3px] min-h-[3px] md:h-[280px] bg-primary-100"
+                ></span>
+                <div class="w-full flex flex-col gap-[30px] md:gap-[60px]">
+                  <div class="flex flex-col w-full">
+                    <label
+                      for=""
+                      class="text-primary-100 text-xl md:text-2xl font-bold"
+                      >Имя</label
+                    >
+                    <input
+                      type="text"
+                      class="w-full py-5 border-b-[3px] border-primary-100 text-sm font-medium bg-transparent outline-none"
+                      placeholder="Введите свое имя"
+                    />
+                  </div>
+                  <div class="flex flex-col w-full">
+                    <label
+                      for=""
+                      class="text-primary-100 text-xl md:text-2xl font-bold"
+                      >Имя</label
+                    >
+                    <input
+                      type="text"
+                      class="w-full py-5 border-b-[3px] border-primary-100 text-sm font-medium bg-transparent outline-none"
+                      placeholder="Введите свое имя"
+                    />
+                  </div>
+                </div>
+              </div>
+              <button
+                class="mx-auto w-full max-w-full lg:max-w-[369px] p-7 lg:p-9 rounded-custom bg-primary-100 text-primary-300 text-lg lg:text-xl font-bold flex items-center justify-center gap-[14px] text-center hover:text-primary-100 hover:bg-primary-300 transition-all"
+              >
+                Отправить
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="22"
+                  viewBox="0 0 21 22"
+                  fill="none"
+                >
+                  <path
+                    d="M6 20L15 11L6 2"
+                    stroke="currentColor"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-primary-100">
+      <div class="bg-primary-300 rounded-t-[60px] sm:rounded-t-[100px]">
+        <div class="container">
+          <div
+            class="px-5 py-[98.5px] flex flex-col gap-[60px] lg:gap-[100px] text-primary-100"
+          >
+            <div
+              class="flex items-center flex-col md:flex-row justify-between gap-6"
+            >
+              <div class="flex flex-col md:flex-row items-center gap-[14px]">
+                <div class="w-[71px] h-[71px]">
+                  <img
+                    src="/assets/images/logo.svg"
+                    alt=""
+                    class="w-full h-full"
+                  />
+                </div>
+                <h2 class="text-3xl font-bold">BEHISHT LEZZETI</h2>
+              </div>
+              <div
+                class="flex flex-wrap gap-[27px] items-center flex-row-reverse"
+              >
+                <a
+                  href=""
+                  class="w-[50px] h-[50px] border-2 border-primary-100 rounded-full flex items-center justify-center"
+                >
+                  <!-- <img src="" alt="" class="w-full h-full"> -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="22"
+                    viewBox="0 0 14 22"
+                    fill="none"
+                  >
+                    <path
+                      d="M12.5 1H9.5C8.17392 1 6.90215 1.52678 5.96447 2.46447C5.02678 3.40215 4.5 4.67392 4.5 6V9H1.5V13H4.5V21H8.5V13H11.5L12.5 9H8.5V6C8.5 5.73478 8.60536 5.48043 8.79289 5.29289C8.98043 5.10536 9.23478 5 9.5 5H12.5V1Z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href=""
+                  class="w-[50px] h-[50px] border-2 border-primary-100 rounded-full flex items-center justify-center"
+                >
+                  <!-- <img src="" alt="" class="w-full h-full"> -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                  >
+                    <path
+                      d="M16.5 5.5H16.51M6 1H16C18.7614 1 21 3.23858 21 6V16C21 18.7614 18.7614 21 16 21H6C3.23858 21 1 18.7614 1 16V6C1 3.23858 3.23858 1 6 1ZM15 10.37C15.1234 11.2022 14.9813 12.0522 14.5938 12.799C14.2063 13.5458 13.5931 14.1514 12.8416 14.5297C12.0901 14.9079 11.2384 15.0396 10.4078 14.9059C9.57713 14.7723 8.80976 14.3801 8.21484 13.7852C7.61992 13.1902 7.22773 12.4229 7.09407 11.5922C6.9604 10.7616 7.09207 9.90989 7.47033 9.15837C7.84859 8.40685 8.45419 7.79374 9.20098 7.40624C9.94778 7.01874 10.7978 6.87659 11.63 7C12.4789 7.12588 13.2649 7.52146 13.8717 8.12831C14.4785 8.73515 14.8741 9.52108 15 10.37Z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <p class="text-sm font-medium text-center uppercase">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function copyToClipBoard(inputElement) {
+        // Copy the text inside the input field
+        navigator.clipboard
+          .writeText(inputElement.value)
+          // .then(() => {
+          //   // Alert the copied text
+          //   alert("Copied the text: " + inputElement.value);
+          // })
+          .catch((err) => {
+            console.error("Could not copy text: ", err);
+          });
+      }
+    </script>
+    <script src="./main.js"></script>
+  </body>
+</html>

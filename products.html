@@ -28,9 +28,10 @@
                 BEHISHT LEZZETI
               </h2>
             </a>
-            <div class="hidden">
+            <div class="lg:hidden">
               <button
-                class="text-primary-100 bg-primary-200 p-4 rounded-custom"
+                id="openMenu"
+                class="text-primary-100 bg-primary-200 p-3 rounded-custom hover:bg-primary-300 transition-all"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -58,6 +59,87 @@
                   />
                 </svg>
               </button>
+              <div
+                id="menu"
+                class="fixed top-0 left-0 z-50 w-full h-screen bg-primary-100 px-5 py-7 flex flex-col items-center justify-start gap-6 overflow-y-auto"
+              >
+                <div class="flex items-center justify-start w-full mb-16">
+                  <button
+                    id="closeMenu"
+                    class="rounded-custom bg-primary-200 text-primary-100 p-4 hover:bg-primary-300 transition-all"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 21 22"
+                      fill="none"
+                      class="rotate-180 w-6 h-6"
+                    >
+                      <path
+                        d="M6 20L15 11L6 2"
+                        stroke="currentColor"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <a
+                  href="./index.html"
+                  class="flex flex-col items-center gap-[14px]"
+                >
+                  <div class="w-[71px] h-[71px] min-w-[71px] min-h-[71px]">
+                    <img
+                      src="/assets/images/logo.svg"
+                      alt=""
+                      class="w-full h-full"
+                    />
+                  </div>
+                  <h2 class="text-primary-300 text-2xl lg:text-3xl font-bold">
+                    BEHISHT LEZZETI
+                  </h2>
+                </a>
+
+                <!-- active link class="px-9 py-[18px] rounded-custom text-primary-100 text-base font-bold bg-white" -->
+                <!-- ordinary link class="px-9 py-[18px] rounded-custom text-primary-300 text-base font-bold hover:bg-white hover:text-primary-100 transition-all" -->
+
+                <a
+                  href="./products.html"
+                  class="w-full text-center px-9 py-[18px] rounded-custom text-primary-300 text-base font-bold hover:bg-white hover:text-primary-100 transition-all"
+                  >Продукция</a
+                >
+
+                <a
+                  href="./partners.html"
+                  class="w-full text-center px-9 py-[18px] rounded-custom text-primary-300 text-base font-bold hover:bg-white hover:text-primary-100 transition-all"
+                  >Партнерам</a
+                >
+                <a
+                  href="./about.html"
+                  class="w-full text-center px-9 py-[18px] rounded-custom text-primary-300 text-base font-bold hover:bg-white hover:text-primary-100 transition-all"
+                  >О нас</a
+                >
+                <div class="flex items-center justify-between gap-6">
+                  <!-- active lang -->
+                  <a
+                    href=""
+                    class="w-full px-9 py-[18px] text-primary-100 text-base font-bold bg-primary-300 rounded-custom"
+                    >Ру</a
+                  >
+                  <!-- ordinary lang -->
+                  <a
+                    href=""
+                    class="w-full px-9 py-[18px] text-primary-100 text-base font-bold bg-primary-200 hover:bg-primary-300 transition-all rounded-custom"
+                    >En</a
+                  >
+                  <!-- ordinary lang -->
+                  <a
+                    href=""
+                    class="w-full px-9 py-[18px] text-primary-100 text-base font-bold bg-primary-200 hover:bg-primary-300 transition-all rounded-custom"
+                    >Tm</a
+                  >
+                </div>
+              </div>
             </div>
             <div class="hidden lg:flex items-center gap-7">
               <!-- active link class="px-9 py-[18px] rounded-custom text-primary-100 text-base font-bold bg-white" -->
@@ -74,7 +156,7 @@
                 >Партнерам</a
               >
               <a
-                href=""
+                href="./about.html"
                 class="px-9 py-[18px] rounded-custom text-primary-300 text-base font-bold hover:bg-white hover:text-primary-100 transition-all"
                 >О нас</a
               >
@@ -127,7 +209,7 @@
             class="w-full px-5 flex flex-col gap-[35px] text-center py-[100px] lg:py-[166px]"
           >
             <h1
-              class="text-primary-300 text-[36px] md:text-[56px] lg:text-[70px] font-black uppercase"
+              class="text-primary-300 text-[36px] md:text-[50px] xl:text-[70px] font-black uppercase"
             >
               ПРОДУКЦИЯ
             </h1>
